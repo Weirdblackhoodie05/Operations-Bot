@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "Stealing your data!",     // this is what people actually see
+        state: "Updating Myself",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -434,7 +434,7 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
+    noPermission: "You do not have permission to use this command. Please create a ticket, if you have the correct role.",
     cooldownActive: "Please wait {time} before using this command again.",
     errorOccurred: "An error occurred while executing this command.",
     missingPermissions:
@@ -449,7 +449,7 @@ export const botConfig = {
   // Set any feature to `false` to disable it globally.
   features: {
     // Core systems.
-    economy: true,
+    economy: false,
     leveling: true,
     moderation: true,
     logging: true,
@@ -458,8 +458,8 @@ export const botConfig = {
     // Community engagement systems.
     tickets: true,
     giveaways: true,
-    birthday: true,
-    counter: true,
+    birthday: false,
+    counter: false,
 
     // Security and self-service systems.
     verification: true,
@@ -472,8 +472,8 @@ export const botConfig = {
     tools: true,
     utility: true,
     community: true,
-    fun: true,
-    music: true,
+    fun: false,
+    music: false,
   },
 };
 
